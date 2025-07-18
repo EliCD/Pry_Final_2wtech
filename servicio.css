@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: o;
+    background-color: #f3f7fa;
+    color: #333;
+}
+
+header{
+    background-color:rgb(34, 99, 124);
+    color:rgb(255, 255, 255);
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    display: flex;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+}
+
+.logo img{
+  height: 150px;
+  margin-right: 10px;
+}
+
+nav a{
+    color: #fff;
+    margin: 0 25px;
+    text-decoration: none;
+    font-weight: 400;
+   
+}
+
+nav .btn-verde {
+  background: #33a532;
+  padding: 10px 20px;
+  border-radius: 9px;
+}
+.hero-section {
+background: url("https://www.kin.energy/PAgina%20KINENERGY%20IMAGENES/Imagenes%20Blog/2024/Blog%202024/Tecnolog%C3%ADas-de-la-informaci%C3%B3n-y-comunicaci%C3%B3n.png");
+color: #fff;
+padding: 280px;
+text-align: left;
+position: relative;
+overflow: hidden; 
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1;
+  }
+
+.hero-content {
+  position: relative;
+  z-index: 2; 
+  max-width: 2200px;
+  margin: 0 auto;
+  padding: 0 280px;
+  }
+
+ .hero-content h1 {
+  font-size: 3.5em;
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  }
+
+.description-section {
+background-color: #ffffff; 
+padding: 80px 20px;
+text-align: center;
+padding: 120px;
+}
+
+.description-section p {
+ font-size: 3.5rem;
+ line-height: 2;
+ color: #333333;
+ max-width: 2500px;
+ margin: 0 auto; 
+ font-weight: 1400;
+}
+
+.services-section {
+width: 100%;
+max-width: 1000px; 
+padding: 60px 40px;
+text-align: center;
+}
+
+.services-section h2 {
+font-size: 2.5em;
+color: #5587a8; 
+margin-bottom: 50px; 
+text-transform: uppercase;
+letter-spacing: 2px;
+font-weight: bold;
+}
+
+.services-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+gap: 60px 60px; 
+justify-items: center; 
+}
+
+.service-item {
+background-color: #ffffff; 
+padding: 25px;
+border-radius: 8px;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease; 
+width: 100%; 
+max-width: 300px; 
+}
+
+.service-item:hover {
+transform: translateY(-8px); 
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /
+}
+
+.service-item img {
+width: 100px; 
+height: auto;
+margin-bottom: 20px;
+filter: brightness(0.6) saturate(1.2); 
+}
+
+.service-item p {
+font-size: 1.1em;
+color: #4a4a4a;
+line-height: 1.4;
+margin: 0;
+font-weight: 600;
+}
+
+.cta-section {
+background: url("https://static.vecteezy.com/system/resources/previews/025/742/724/non_2x/blue-circle-circuit-hud-futuristic-technology-energy-power-computer-ultramodern-design-creative-vector.jpg");
+color: #fff;
+padding: 180px 40px;
+text-align: center;
+position: relative;
+overflow: hidden;
+}
+
+.cta-section::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: rgba(0, 0, 0, 0.6); 
+z-index: 1;
+}
+
+.cta-content {
+position: relative;
+z-index: 5;
+max-width: 800px;
+margin: 0 auto;
+}
+
+.cta-content h2 {
+font-size: 3.2em;
+margin-bottom: 20px;
+font-weight: 600;
+}
+
+.cta-content p {
+font-size: 2.2em;
+margin-bottom: 40px;
+font-weight: 300;
+}
+
+.cta-button {
+display: inline-block;
+background-color: #007bff; 
+color: #fff;
+padding: 15px 30px;
+border-radius: 5px;
+text-decoration: none;
+font-size: 1.2em;
+font-weight: bold;
+transition: background-color 0.3s ease, transform 0.2s ease;
+box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+}
+
+.cta-button:hover {
+background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+transform: translateY(-2px); /* Pequeño efecto de elevación */
+}
+
+@media (max-width: 768px) {
+.services-section h2 {
+font-size: 2em;
+margin-bottom: 30px;
+}
+}
+
+.services-grid {
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 30px 20px;
+}
+
+.service-item {
+padding: 20px;
+}
+
+.service-item img {
+width: 80px;
+margin-bottom: 15px;
+}
+
+@media (max-width: 480px) {
+.services-section {
+padding: 30px 15px;
+}
+.services-section h2 {
+font-size: 1.8em;
+}
+.services-grid {
+grid-template-columns: 1fr; 
+gap: 25px;
+}
+}
+
+.Información {
+    background-color: #55728a; 
+    color: #ffffff; 
+    padding: 100px 200px; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 100px; 
+    margin-top: auto; 
+}
+.logo-2w img {
+    flex: 1; 
+    max-width: 500px; 
+    display: flex;
+    flex-direction: column;
+
+}
+
+.logo-2w p {
+    flex: 1.5; 
+    max-width: 350px;
+    line-height: 1.6;
+    text-align: left;
+    font-size: 40px; 
+}
+
+.Enlaces {
+    flex: 1.5; 
+    line-height: 1.6;
+    text-align: left;
+    font-size: 40px; 
+    flex-direction: column;
+    padding: 100px 100px; 
+    display: flex;
+
+}
+.Enlaces p ul{
+    flex: 1.5; 
+    line-height: 1.6;
+
+}
+
+.Datos1 {
+    flex: 1.5; 
+    line-height: 1.6;
+    flex-direction: column;
+    padding: 100px 20px; 
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.Datos1 p {
+    font-size: 40px; 
+
+}
+
+.Datos1 img{
+    width: 37px;
+}
+
+.redessociales p {
+    flex: 1.5; 
+    padding: 100px 20px; 
+    display: flex;
+    font-size: 40px; 
+ 
+}
+.redessociales img{
+    width: 50px;
+}
+
+footer{
+    background-color:rgb(81, 131, 161);
+    color: #ffffff;
+    text-align: left;
+    padding: 1rem;
+}
